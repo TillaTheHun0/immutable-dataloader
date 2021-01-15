@@ -3,7 +3,7 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![TypeScript](https://camo.githubusercontent.com/21132e0838961fbecb75077042aa9b15bc0bf6f9/68747470733a2f2f62616467656e2e6e65742f62616467652f4275696c74253230576974682f547970655363726970742f626c7565)](https://www.typescriptlang.org/)
 
-[dataloader](https://github.com/graphql/dataloader), but calls to load return new copies every time
+[dataloader](https://github.com/graphql/dataloader), but calls to `load()` return new copies of the data, every time
 
 _Note:_ This doesn't mean that data is reloaded from the data source, just that each call to `load()` or `loadMany()` returns a new copy of the data.
 
