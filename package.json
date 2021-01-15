@@ -1,0 +1,59 @@
+{
+  "name": "immutable-dataloader",
+  "version": "1.0.0",
+  "description": "dataloader, but always returns new data",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "lint": "standard",
+    "test": "jest",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TillaTheHun0/immutable-dataloader.git"
+  },
+  "author": "Tyler Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TillaTheHun0/immutable-dataloader/issues"
+  },
+  "homepage": "https://github.com/TillaTheHun0/immutable-dataloader#readme",
+  "dependencies": {
+    "dataloader": "^2.0.0",
+    "lodash.clonedeep": "^4.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/jest": "^26.0.20",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "case": "^1.6.3",
+    "commitlint": "^11.0.0",
+    "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "rimraf": "^3.0.2",
+    "standard": "^16.0.3",
+    "standard-version": "^9.0.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "^3.4.3"
+  },
+  "standard": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "env": [
+      "jest"
+    ]
+  }
+}
