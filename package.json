@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "dataloader, but always returns new data",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "files": [
     "dist"
   ],
@@ -18,6 +17,13 @@
     "type": "git",
     "url": "git+https://github.com/TillaTheHun0/immutable-dataloader.git"
   },
+  "keywords": [
+    "dataloader",
+    "async",
+    "immutable",
+    "graphql",
+    "datasource"
+  ],
   "author": "Tyler Hall",
   "license": "MIT",
   "bugs": {
