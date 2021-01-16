@@ -37,7 +37,7 @@ res.foo = 'bar'
 // or an array
 const resArray = await dataloader.load(2) // ['foo']
 
-const lastItem = res.pop() // mututes the array
+const lastItem = resArray.pop() // mututes the array
 ```
 
 Because the data returned from the dataloader was directly mutated, subsequent calls to `load`, will return that cached, but same _mutated_, data:
@@ -45,7 +45,7 @@ Because the data returned from the dataloader was directly mutated, subsequent c
 ```js
 const resArray = await dataloader.load(2) // [] 'foo' was removed by the last pop() call
 
-const lastItem = res.pop() // array is empty, so lastItem is now undefined
+const lastItem = resArray.pop() // array is empty, so lastItem is now undefined
 ```
 
 Depending on the order or the calls to `load`, this can cause some funky gotchas, and bugs that are difficult to trace.
