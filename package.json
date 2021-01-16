@@ -1,6 +1,6 @@
 {
   "name": "immutable-dataloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dataloader, but always returns new data",
   "main": "dist/index.js",
   "files": [
